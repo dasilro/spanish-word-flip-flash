@@ -13,7 +13,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'npm i'
+                sh 'npm install --save --save-exact'
                 sh 'npm run build'
             }
         }
