@@ -29,7 +29,7 @@ pipeline {
                     }
                     steps {
                         // Unit tests with Vitest
-                        sh 'npx vitest run --reporter=verbose'
+                        sh 'npx vitest@3.2.4 run --reporter=verbose'
                     }
                 }
             }
