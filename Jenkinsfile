@@ -13,7 +13,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'npm ci'
+                sh 'npm i'
                 sh 'npm run build'
             }
         }
