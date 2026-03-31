@@ -28,6 +28,7 @@ pipeline {
                         }
                     }
                     steps {
+                        sh 'npm install vitest@3.2.4'
                         // Unit tests with Vitest
                         sh 'npx vitest@3.2.4 run --reporter=verbose'
                     }
