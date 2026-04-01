@@ -73,7 +73,7 @@ pipeline {
                     }
                     post{
                       always {
-                        publishChecks([
+                        publishHTML([
                             allowMissing: false,
                             alwaysLinkToLastBuild: true,
                             icon: '',
