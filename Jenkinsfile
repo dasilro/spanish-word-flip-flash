@@ -66,7 +66,7 @@ pipeline {
                         }
                     }
                     environment {
-                        E2E_BASE_URL = 'https://spanish-cards.netlify.app/' // Set the base URL for Playwright tests
+                        E2E_BASE_URL = 'https://spanish-cards-dsr.netlify.app/' // Set the base URL for Playwright tests
                     }
                     steps{
                         sh 'npx playwright test'
