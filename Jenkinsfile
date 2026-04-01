@@ -80,7 +80,7 @@ pipeline {
                             keepAll: false,
                             reportDir: 'reports-e2e/html/',
                             reportFiles: 'index.html',
-                            reportName: "Playwright HTML Report - Build #${env.BUILD_NUMBER}"
+                            reportName: "Playwright HTML Report"
                         ])
                         junit stdioRetention: 'ALL', testResults: 'reports-e2e/junit.xml'
                       }  
