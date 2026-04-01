@@ -45,7 +45,7 @@ jobs:
           node-version: 24
           cache: npm
       - name: Install deps
-        run: npm ci
+        run: npm install --save --save-exact
       - name: Run Vitest
         run: npx vitest run --reporter=verbose 
 
